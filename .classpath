@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" output="target/classes" path="src">
+		<attributes>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" path="launch4j"/>
+	<classpathentry kind="lib" path="C:/Users/DEV_GAIA/.p2/pool/plugins/org.eclipse.core.contenttype_3.6.0.v20170207-1037.jar"/>
+	<classpathentry kind="lib" path="C:/Users/DEV_GAIA/.p2/pool/plugins/org.eclipse.core.jobs_3.9.3.v20180115-1757.jar"/>
+	<classpathentry kind="lib" path="C:/Users/DEV_GAIA/.p2/pool/plugins/org.eclipse.core.resources_3.12.0.v20170417-1558.jar"/>
+	<classpathentry kind="lib" path="C:/Users/DEV_GAIA/.p2/pool/plugins/org.eclipse.equinox.common_3.9.0.v20170207-1454.jar"/>
+	<classpathentry kind="lib" path="C:/Users/DEV_GAIA/.p2/pool/plugins/org.eclipse.equinox.preferences_3.7.0.v20170126-2132.jar"/>
+	<classpathentry kind="lib" path="C:/Users/DEV_GAIA/.p2/pool/plugins/org.eclipse.jdt.core_3.13.102.v20180330-0919.jar"/>
+	<classpathentry kind="lib" path="C:/Users/DEV_GAIA/.p2/pool/plugins/org.eclipse.osgi_3.12.100.v20180210-1608.jar"/>
+	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="target/classes"/>
+</classpath>

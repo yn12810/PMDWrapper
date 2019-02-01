@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="maven-antrun-" default="main"  >
+<target name="main">
+  <ant antfile="jp/co/nkc/gaia/client/cyclomaticcomplexanalyzer/ant/alljavacc.xml">
+    <property name="target" value="C:\eclipse_oxgen\PMD_GIT\PMDWrapper\target/generated-sources/javacc"/>
+    <property name="javacc.jar" value="${settings.localRepository}/net/java/dev/javacc/javacc/5.0/javacc-5.0.jar"/>
+  </ant>
+</target>
+</project>

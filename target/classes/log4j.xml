@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+
+<log4j:configuration xmlns:log4j='http://jakarta.apache.org/log4j/'>
+
+	<!--テキストにログを出力するConsoleAppenderをSTDOUTとして定義 -->
+	<appender name="STDOUT" class="org.apache.log4j.ConsoleAppender" >
+    <!-- デフォルトのログレベル -->
+		<!-- ログの出力形式を指定 -->
+		<layout class="org.apache.log4j.PatternLayout">
+			<!--
+			<param name="ConversionPattern" value="%d %-5p [%C] - %m%n" />
+			-->
+
+			<param name="ConversionPattern" value="%d %-5p [%x] - %m%n" />
+			<!-- 07-05-10 稼動時案 --> 
+			<!-- 
+			<param name="ConversionPattern" value="%d %-5p [%C{2}][%x] - %m%n" />			
+			-->
+		</layout>
+	</appender>
+
+<!--
+	<appender name="HTTPAppender" class="jp.co.nkc.gaia.tools.util.log.HttpAppender" >
+		<param name="logURL" value="http://localhost:8080/PrimeGaiaServer/LogServlet" /> 
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d %-5p [%C] - %m%n" />
+		</layout>
+	</appender>
+	<category name="jp.co.nkc.gaia.client">
+		<priority value="debug" />
+		<appender-ref ref="STDOUT"/>	
+		<appender-ref ref="HTTPAppender"/>	
+	</category> 
+-->
+
+ <root>
+		<priority value ="debug" />
+		<appender-ref ref="STDOUT"/>
+	</root>
+
+</log4j:configuration>

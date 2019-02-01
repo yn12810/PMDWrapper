@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<ruleset name="PrimeGaia QA Rules">
+
+    <description>
+        PrimeGaia Java Source Code Development PMD Rule Sets
+    </description>
+
+	<rule ref="category/java/design.xml/NcssCount"
+          message="{0}|{1}|{2}"
+          since="6.0.0"
+          class="net.sourceforge.pmd.lang.java.rule.design.NcssCountRule"
+          externalInfoUrl="${pmd.website.baseurl}/pmd_rules_java_design.html#ncsscount">
+
+        <priority>3</priority>
+		<properties>
+			<property name="methodReportLevel" value="1"/>
+			<property name="classReportLevel" value="1"/>
+		</properties>
+    </rule>
+
+
+<rule ref="category/java/design.xml/NPathComplexity"
+          since="3.9"
+          message="{0}|{1}|{2}"
+          class="net.sourceforge.pmd.lang.java.rule.design.NPathComplexityRule"
+          externalInfoUrl="${pmd.website.baseurl}/pmd_rules_java_design.html#npathcomplexity">
+        <priority>3</priority>
+    <properties>
+        <property name="reportLevel" value="1"/>
+    </properties>        
+    </rule>
+
+
+	<rule ref="category/java/design.xml/CyclomaticComplexity"
+          message="{0}|{1}|{3}"
+          since="1.03"
+          class="net.sourceforge.pmd.lang.java.rule.design.CyclomaticComplexityRule"
+          externalInfoUrl="${pmd.website.baseurl}/pmd_rules_java_design.html#cyclomaticcomplexity">
+        <priority>3</priority>
+       	<properties>
+			<property name="methodReportLevel" value="1"/>
+			<property name="classReportLevel" value="1"/>
+	    </properties>
+    </rule>
+
+</ruleset>
